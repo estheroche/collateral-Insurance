@@ -1,66 +1,30 @@
-## Foundry
+# Collateral and Insurance Protocol Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
 
-Foundry consists of:
+## Table of Content
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- [Collateral and Insurance Protocol Contract](#collateral-and-insurance-protocol-contract)
+  - [Table of Content](#table-of-content)
+  - [Introduction](#introduction)
+  - [Description](#description)
+  - [Deployment and Verification of the Contracts on Sepolia testnet](#deployment-and-verification-of-the-contracts-on-sepolia-testnet)
+  
 
-## Documentation
+## Introduction
+This is Solidity-based smart contracts in this project. The contracts enable users to purchase insurance and collateral for crypto-backed loans.
 
-https://book.getfoundry.sh/
+## Description
 
-## Usage
+The project includes a factory contract model, which allows users to create either insurance contracts or collateral protection contracts. The factory contract can deploy instances of either a child contract based on user preference.
 
-### Build
+The insurance contract allows users to pay their premiums either monthly or annually. The collateral management contract, on the other hand, monitors the value of the user's collateral. If the collateral value drops below 20, the contract liquidates the collateral. Users can also repay their loans to retrieve their collateral.
 
-```shell
-$ forge build
-```
+## Deployment and Verification of the Contracts on Sepolia testnet
 
-### Test
+![Alt text](images/02.png)
 
-```shell
-$ forge test
-```
+![Alt text](images/11.png)
 
-### Format
+![Alt text](images/03.png)
 
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+![Alt text](images/last.png)
