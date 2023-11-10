@@ -41,6 +41,8 @@ The insurance contract allows users to pay their premiums either monthly or annu
   Factory Contract: https://sepolia.etherscan.io/address/0x738cc49d9398aea8130625677c29d74851261890
 
   # Author:
+  @metacraftersio
+  
   Esther Oche https://twitter.com/Estheroche1
 
   # License
