@@ -7,7 +7,10 @@
   - [Table of Content](#table-of-content)
   - [Introduction](#introduction)
   - [Description](#description)
-  - [Deployment and Verification of the Contracts on Sepolia testnet](#deployment-and-verification-of-the-contracts-on-sepolia-testnet)
+  - [Deployment of the Contracts on Sepolia testnet](#deployment-of-the-contracts-on-sepolia-testnet)
+  - [Verification of the Contracts on Sepolia testnet](#verification-of-the-contracts-on-sepolia-testnet)
+- [Author:](#author)
+- [License](#license)
   
 
 ## Introduction
@@ -19,7 +22,7 @@ The project includes a factory contract model, which allows users to create eith
 
 The insurance contract allows users to pay their premiums either monthly or annually. The collateral management contract, on the other hand, monitors the value of the user's collateral. If the collateral value drops below 20, the contract liquidates the collateral. Users can also repay their loans to retrieve their collateral.
 
-## Deployment and Verification of the Contracts on Sepolia testnet
+## Deployment of the Contracts on Sepolia testnet
 
 ![Alt text](images/02.png)
 
@@ -28,3 +31,17 @@ The insurance contract allows users to pay their premiums either monthly or annu
 ![Alt text](images/03.png)
 
 ![Alt text](images/last.png)
+
+ ## Verification of the Contracts on Sepolia testnet
+
+  Insurance Contract: https://sepolia.etherscan.io/address/0x6d5100a503560ac86b54f32541220591d44e239e
+
+  Collateral Contract: https://sepolia.etherscan.io/address/0x91522f4357f261d81d6a905455df7e5ca850e349
+
+  Factory Contract: https://sepolia.etherscan.io/address/0x738cc49d9398aea8130625677c29d74851261890
+
+  # Author:
+  Esther Oche https://twitter.com/Estheroche1
+
+  # License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
